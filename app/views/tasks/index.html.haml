@@ -1,0 +1,6 @@
+task list
+%div{id: "task-form"} Bad
+%table{id: "tasks", class: "table"}
+  = render @tasks
+= link_to "New Task (remote:false)", new_task_path
+= link_to "New Task (remote:true)", new_task_path, remote: true
